@@ -1,0 +1,44 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        HOST_UID: ${HOST_UID:-1000}
+        HOST_GID: ${HOST_GID:-1000}
+        USERNAME: deltodon
+        GROUPNAME: deltodon
+    volumes:
+      - ..:/workspaces/genai-demo
+    working_dir: /workspaces/genai-demo
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Keep container running
+    command: sleep infinity
+
+  # Example: Add supporting services as needed
+  # Uncomment and customize for your GenAI projects
+  
+  # chromadb:
+  #   image: chromadb/chroma:latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - chroma-data:/chroma/chroma
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+  #     start_period: 30s
+
+  # redis:
+  #   image: redis:7-alpine
+  #   restart: unless-stopped
+  #   ports:
+  #     - "6379:6379"
+
+# volumes:
+#   chroma-data:
