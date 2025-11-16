@@ -18,11 +18,19 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "markdown-preview-github-styles.darkTheme": "light",
+        "workbench.secondarySideBar.defaultVisibility": "hidden",
+        "claudeCode.useTerminal": true
       },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "bierner.github-markdown-preview",
+        "tamasfe.even-better-toml",
+        "anthropic.claude-code",
+        "saoudrizwan.claude-dev"
       ]
     }
   }

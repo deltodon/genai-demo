@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)"
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_USE_BEDROCK": "1",
+    "AWS_REGION": "us-east-1",
+    "ANTHROPIC_MODEL": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "BEDROCK_ENDPOINT_URL": "https://bedrock.us-east-1.amazonaws.com",
+    "BEDROCK_REGION_NAME": "us-east-1",
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": 4096,
+    "MAX_THINKING_TOKENS": 1024
+  },
+  "companyAnnouncements": [
+    "Welcome to GenAI Demo workspace.\nHappy coding!"
+  ]
+}
