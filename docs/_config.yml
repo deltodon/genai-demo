@@ -1,0 +1,32 @@
+title: genai-demo
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+permalink: /:path/
+
+# Site URL configuration
+url: "" # Empty for local development and GitHub Pages
+baseurl: "" # Empty for serving from root
+
+# Site root is docs/ (passed via CLI or set here if you prefer)
+# source: docs
+# destination: _site
+
+# Navigation
+masthead_title: "genai-demo"
+main:
+  - title: "Documentation"
+    url: /documentation/
+  - title: "Presentations"
+    url: /presentations/
+
+# Auto-apply default layout to everything under /documentation
+defaults:
+  - scope:
+      path: "documentation"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
