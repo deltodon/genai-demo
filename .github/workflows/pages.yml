@@ -31,7 +31,8 @@ jobs:
         run: bundle install --path vendor/bundle
 
       - name: Build Jekyll (source=docs -> _site)
-        run: bundle exec jekyll build --source docs --destination _site
+        working-directory: docs
+        run: bundle exec jekyll build --destination ../_site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
