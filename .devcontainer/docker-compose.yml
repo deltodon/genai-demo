@@ -8,8 +8,11 @@ services:
         HOST_GID: ${HOST_GID:-1000}
         USERNAME: deltodon
         GROUPNAME: deltodon
+        PYTHON_VERSION: ${PYTHON_VERSION:-3.12}
+        NODE_VERSION: ${NODE_VERSION:-22.20.0}
     volumes:
       - ..:/workspaces/genai-demo
+      - ${HOME}/.aws:/home/deltodon/.aws:ro
     working_dir: /workspaces/genai-demo
     user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
     environment:
