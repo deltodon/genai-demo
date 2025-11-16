@@ -5,7 +5,7 @@ permalink: pretty
 
 # Site URL configuration
 url: "" # Empty for local development and GitHub Pages
-baseurl: "" # Empty for serving from root
+baseurl: "/genai-demo" # Project page subdirectory
 
 # Site root is docs/ (passed via CLI or set here if you prefer)
 # source: docs
