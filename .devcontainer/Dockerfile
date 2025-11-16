@@ -4,6 +4,8 @@ ARG HOST_UID=1000
 ARG HOST_GID=1000
 ARG USERNAME=developer
 ARG GROUPNAME=deltodon
+ARG PYTHON_VERSION=3.12
+ARG NODE_VERSION=22.20.0
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
@@ -20,6 +22,7 @@ RUN apt-get update \
     ca-certificates \
     bash-completion \
     sudo \
+    unzip \
     # Build tools
     build-essential \
     make \
@@ -43,6 +46,12 @@ RUN apt-get update \
     vim \
     less \
  && rm -rf /var/lib/apt/lists/*
+
+# Install AWS CLI v2
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
+ && unzip awscliv2.zip \
+ && ./aws/install \
+ && rm -rf aws awscliv2.zip
 
 # Install bundler for Jekyll
 RUN gem install bundler
@@ -68,9 +77,9 @@ RUN curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-instal
  && echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /home/${USERNAME}/.bashrc \
  && echo 'eval "$(pyenv init -)"' >> /home/${USERNAME}/.bashrc
 
-# Install Python 3.11 via pyenv
-RUN ${PYENV_ROOT}/bin/pyenv install 3.11 \
- && ${PYENV_ROOT}/bin/pyenv global 3.11 \
+# Install Python via pyenv (version from build arg)
+RUN ${PYENV_ROOT}/bin/pyenv install ${PYTHON_VERSION} \
+ && ${PYENV_ROOT}/bin/pyenv global ${PYTHON_VERSION} \
  && ${PYENV_ROOT}/bin/pyenv rehash
 
 # Update PATH for current build context
@@ -79,9 +88,15 @@ ENV PATH="${PYENV_ROOT}/shims:${PATH}"
 # Upgrade pip and install common Python packages
 RUN python -m pip install --upgrade pip setuptools wheel
 
+# Install uv package manager (fast Python package installer)
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
+ && echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> /home/${USERNAME}/.bashrc
+
+# Update PATH for uv
+ENV PATH="/home/${USERNAME}/.cargo/bin:${PATH}"
+
 # Install nvm
 ENV NVM_DIR="/home/${USERNAME}/.nvm"
-ENV NODE_VERSION="20"
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash \
  && . ${NVM_DIR}/nvm.sh \
@@ -96,6 +111,9 @@ RUN echo 'export NVM_DIR="$HOME/.nvm"' >> /home/${USERNAME}/.bashrc \
 
 # Update PATH for current build context
 ENV PATH="${NVM_DIR}/versions/node/v${NODE_VERSION}.*/bin:${PATH}"
+
+# Install Claude Code CLI globally
+RUN . ${NVM_DIR}/nvm.sh && npm install -g @anthropic-ai/claude-code
 
 # Set up local bin directory
 ENV PATH="/home/${USERNAME}/.local/bin:${PATH}"
