@@ -1,0 +1,29 @@
+{
+  "name": "GenAI workspace",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "deltodon",
+
+  // Forward common ports
+  "forwardPorts": [
+    4000,  // Jekyll documentation server
+    8000   // Future API/GenAI services
+  ],
+
+  // Optional: Uncomment to run specific services
+  // "runServices": ["app"],
+
+  // VS Code customizations
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}
