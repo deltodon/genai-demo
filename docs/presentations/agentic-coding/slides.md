@@ -4,6 +4,25 @@
 
 ###### Full Stack GenAI Engineer
 
+
+---
+
+### Lenght of tasks AI can do
+
+![](images/task-length.png)
+
+<small>https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/</small>
+
+|||
+### Agents 80%
+
+![](images/agent-length.png)
+
+|||
+### SWE 50%
+
+![](images/swe-length.png)
+
 ---
 
 ### Math
