@@ -6,12 +6,14 @@ title: Presentations
 
 This section contains slide presentations for the GenAI Demo project.
 
-## Devcontainer
+## Anentic Coding in 2025
+
 Slide deck covering development container concepts and setup.
 
-- [View Slides]({{ '/presentations/devcontainer/' | relative_url }})
+- [View Slides]({{ '/presentations/agentic-coding/' | relative_url }})
 
-## Claude Code
+<!-- ## Claude Code
+
 Slide deck about using Claude Code in development.
 
-- [View Slides]({{ '/presentations/claude-code/' | relative_url }})
+- [View Slides]({{ '/presentations/claude-code/' | relative_url }}) -->
