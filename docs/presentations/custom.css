@@ -4,3 +4,34 @@
 .reveal h4, .reveal h5, .reveal h6 {
   text-transform: none;
 }
+
+.two-column {
+  display: flex;
+  gap: 2rem;           /* space between columns */
+}
+
+.two-column > div {
+  flex: 1;             /* equal width columns */
+}
+
+/* Optional: vertical centering */
+.two-column {
+  align-items: flex-start; /* or center */
+}
+
+.reveal .extra-small {
+  font-size: 0.4em;
+}
+
+/* Quote block styling - code block appearance */
+.quote-block {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-left: 4px solid #555;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1.5rem;
+}
+
+.spaced-links {
+  margin-top: 1rem;
+}
