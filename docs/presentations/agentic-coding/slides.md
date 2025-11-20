@@ -4,6 +4,12 @@
 
 ###### Full Stack GenAI Engineer
 
+<div class="qr-code-small">
+
+![](images/slides-qr.png)
+
+</div>
+
 ---
 
 ### Model Context
