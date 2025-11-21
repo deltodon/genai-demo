@@ -12,6 +12,63 @@
 
 ---
 
+### LLMs, Chains and Agents
+
+
+|||
+### Coding Agents as VS Code extensions
+
+* GitHub Copilot
+* Cline
+* Roo Code
+* Kilo Code
+
+|||
+### Coding Agents as IDE
+
+###### (Mostly forks of VS Code)
+
+* Cursor
+* Windsurf
+* AWS Kiro
+* Gogle Antigravity
+
+
+|||
+### Coding Agents in CLI
+
+* Claude Code
+* Gemini CLI
+* DeepAgents CLI
+* Cline CLI
+
+---
+
+### Lenght of tasks AI can do
+
+![](images/task-length.png)
+
+
+<div class="extra-small">
+    <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">METR (19 March 2025) Measuring AI Ability to Complete Long Tasks</a>
+</div>
+
+<small>
+    
+</small>
+
+|||
+### Agents 80%
+
+![](images/agent-length.png)
+
+|||
+### SWE 50%
+
+![](images/swe-length.png)
+
+---
+
 ### Model Context
 
 |||
@@ -37,54 +94,62 @@
                 </i>
             </div>
             <div class="spaced-links">
-                <a href="#">Author () title</a>
+                <a href="https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html">Drew Breunig (June 22, 2025) How Long Contexts Fail</a>
                 <br/>
-                <a href="#">Author () title</a>
                 <br/>
-                <a href="#">Author () title</a>
+                <a href="https://arxiv.org/abs/2507.06261">Google DeepMind (July 7, 2025) Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities</a>
+                <br/>
+                <br/>
+                <a href="https://neuraltrust.ai/blog/echo-chamber-context-poisoning-jailbreak">NeuralTrust (June 23, 2025) Echo Chamber: A Context-Poisoning Jailbreak That Bypasses LLM Guardrails</a>
+                <br/>
+                <br/>
+                <a href="https://www.anthropic.com/research/small-samples-poison">Anthropic (October 9, 2025) A small number of samples can poison LLMs of any size</a>
             </div>
         </div>
     </div>
 </div>
 
 
+|||
+### Prompt Injection
+
+
+
 
 |||
 ### Context Engineering
 
-
+* Culling
+* Compacting
+* Sub-Agents
+* Memory and RAG
+* Multi session planning and execution
+* Spec-driven development
 
 ---
 
-### Lenght of tasks AI can do
-
-![](images/task-length.png)
-
-<small>
-    https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
-</small>
+### Spec-driven development
 
 |||
-### Agents 80%
+### BMAD
 
-![](images/agent-length.png)
 
 |||
-### SWE 50%
+### GitHub Spec-Kit
 
-![](images/swe-length.png)
 
----
+|||
+### OpenSpec
 
-### Math
-
-$$
-\int_{0}^{\infty} x \ dx
-$$
 
 ---
 
-### Python
+### Model Context Protocol
+
+
+|||
+### Python Exmaple
+
 
 ```python
 import os
@@ -92,28 +157,91 @@ import os
 print("Hello World!")
 ```
 
----
+|||
+### JS Example
 
-### Bash
 
-```bash
-ls -la
-```
-
----
-
-### What is Claude Code?
-- AI-powered coding assistant
-- Context-aware suggestions
-- Natural language interfaces
 
 |||
-### Features
-1. Code generation
-2. Refactoring help
-3. Documentation
+### RAG-MCP
+
+
+
+|||
+### MCP as Files
+
+
 
 ---
-### Links
-- Docs: ../../documentation/claude-code/
-- Home: ../../website/
+
+
+### Claude Code
+
+
+|||
+### System Prompt
+
+
+|||
+### Tools
+
+
+|||
+### Hooks
+
+
+|||
+### Agents
+
+
+---
+
+
+### Gemini CLI
+
+
+|||
+### Google Search
+
+
+|||
+### Using Gemini as Claude Code Sub-Agents
+
+
+---
+
+### Claude Agent SDK
+
+
+|||
+### Sub-Agents
+
+
+---
+
+### Agentic frameworks
+
+* LangGraph
+* AWS Strands
+* Crew AI
+
+|||
+### LLM Observability
+
+* MLflow LLM tacing
+* Phoenix
+* OpenTelemetry
+
+|||
+### LLM Evaluation
+
+
+---
+
+### Thank You
+
+ 
+
+
+
+
