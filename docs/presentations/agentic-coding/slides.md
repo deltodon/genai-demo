@@ -10,37 +10,86 @@
 
 </div>
 
+|||
+### My background
+
+<div style="font-size: 2rem;">
+    <ul>
+        <li>Background in computer science and applied mathematics</li>
+        <li>Actively programming since 2013 (C++ and Python)</li>
+        <li>Work(ed) in startups, government / public, and financial sector</li>
+        <li>Volunteered as GIS Data Engineer in Humanitarian sector in 2024</li>
+        <li>Developing GenAI projects since 2023</li>
+    </ul>
+</div>
+
+<br/>
+
+##### Disclaimer
+
+<div class="extra-small">
+    <div class="quote-block" style="margin-top: 1.2rem;">
+        All opinions are my own and do not represent the opinions of my current or former clients.
+    </div>
+</div>
+
 ---
 
 ### LLMs, Chains and Agents
 
 
 |||
-### Coding Agents as VS Code extensions
+### Coding Agents in VS Code
 
-* GitHub Copilot
-* Cline
-* Roo Code
-* Kilo Code
+<div class="two-column">
+    <div>
+        <h5>VS Code (and JetBrains) extensions:</h5>
+        <ul>
+            <li><a href="" target="_blank">GitHub Copilot</a></li>
+            <li><a href="" target="_blank">Cline</a></li>
+            <li><a href="" target="_blank">Roo Code</a></li>
+            <li><a href="" target="_blank">Kilo Code</a></li>
+        </ul>
+    </div>
+    <div>
+        <h5>Standalone IDEs<br/>    (mostly forks of VS Code):</h5>
+        <ul>
+            <li><a href="" target="_blank">Cursor</a></li>
+            <li><a href="" target="_blank">Windsurf</a></li>
+            <li><a href="" target="_blank">AWS Kiro</a></li>
+            <li><a href="" target="_blank">Google Antigravity</a></li>
+        </ul>
+    </div>
+</div>
+
 
 |||
-### Coding Agents as IDE
+### Coding Agents in Python and Terminal
 
-###### (Mostly forks of VS Code)
-
-* Cursor
-* Windsurf
-* AWS Kiro
-* Gogle Antigravity
-
-
-|||
-### Coding Agents in CLI
-
-* Claude Code
-* Gemini CLI
-* DeepAgents CLI
-* Cline CLI
+<div class="two-column">
+    <div>
+        <h5>CLI Agents:</h5>
+        <ul>
+            <li><a href="" target="_blank">Claude Code</a></li>
+            <li><a href="" target="_blank">Gemini CLI</a></li>
+            <li><a href="" target="_blank">GitHub Copilot CLI</a></li>
+            <li><a href="" target="_blank">Cline CLI</a></li>
+            <li><a href="" target="_blank">DeepAgents CLI</a></li>
+            <li>...</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Python frameworks:</h5>
+        <ul>
+            <li><a href="" target="_blank">Claude Agent SDK</a></li>
+            <li><a href="" target="_blank">LangGraph</a></li>
+            <li><a href="" target="_blank">Google ADK</a></li>
+            <li><a href="" target="_blank">AWS Strands</a></li>
+            <li><a href="" target="_blank">Crew AI</a></li>
+            <li>...</li>
+        </ul>
+    </div>
+</div>
 
 ---
 
@@ -147,7 +196,7 @@
 * Compacting
 * Sub-Agents
 * Memory and RAG
-* Multi session planning and execution
+* Session planning (TODOs) and execution
 * Spec-driven development
 
 ---
@@ -243,29 +292,4 @@ print("Hello World!")
 
 ---
 
-### Agentic frameworks
-
-* LangGraph
-* AWS Strands
-* Crew AI
-
-|||
-### LLM Observability
-
-* MLflow LLM tacing
-* Phoenix
-* OpenTelemetry
-
-|||
-### LLM Evaluation
-
-
----
-
 ### Thank You
-
- 
-
-
-
-
