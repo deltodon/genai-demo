@@ -35,8 +35,27 @@
 
 ---
 
-### LLMs, Chains and Agents
+### LLM Chats, Chains and Agents
 
+<div class="two-column">
+    <div>
+        <img src="images/timeline.png"
+            data-preview-image
+            data-preview-fit="contain">
+    </div>
+    <div>
+        <img src="images/chains-agents.png"
+            data-preview-image
+            data-preview-fit="contain">
+    </div>
+</div>
+
+<div class="extra-small">
+    <a href="https://www.geeksforgeeks.org/artificial-intelligence/llm-chains/" target="_blank">GeeksforGeeks (September 1, 2025) LLM Chains</a>
+    <br/>
+    <br/>
+    <a href="https://arxiv.org/abs/2210.03629" target="_blank">Yao, S. et al. (2023) ReAct: Synergizing Reasoning and Acting in Language Models</a>
+</div>
 
 |||
 ### Coding Agents in VS Code
@@ -45,19 +64,23 @@
     <div>
         <h5>VS Code (and JetBrains) extensions:</h5>
         <ul>
-            <li><a href="" target="_blank">GitHub Copilot</a></li>
-            <li><a href="" target="_blank">Cline</a></li>
-            <li><a href="" target="_blank">Roo Code</a></li>
-            <li><a href="" target="_blank">Kilo Code</a></li>
+            <li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></li>
+            <li><a href="https://www.augmentcode.com/" target="_blank">Augment Code</a></li>
+            <li><a href="https://cline.bot/" target="_blank">Cline</a></li>
+            <li><a href="https://roocode.com/" target="_blank">Roo Code</a></li>
+            <li><a href="https://kilo.ai/" target="_blank">Kilo Code</a></li>
+            <li>...</li>
         </ul>
     </div>
     <div>
         <h5>Standalone IDEs<br/>    (mostly forks of VS Code):</h5>
         <ul>
-            <li><a href="" target="_blank">Cursor</a></li>
-            <li><a href="" target="_blank">Windsurf</a></li>
-            <li><a href="" target="_blank">AWS Kiro</a></li>
-            <li><a href="" target="_blank">Google Antigravity</a></li>
+            <li><a href="https://cursor.com/" target="_blank">Cursor</a></li>
+            <li><a href="https://windsurf.com/" target="_blank">Windsurf</a></li>
+            <li><a href="https://kiro.dev/" target="_blank">AWS Kiro</a></li>
+            <li><a href="https://firebase.studio/" target="_blank">Firebase Studio</a></li>
+            <li><a href="https://antigravity.google/" target="_blank">Google Antigravity</a></li>
+            <li>...</li>
         </ul>
     </div>
 </div>
@@ -70,22 +93,22 @@
     <div>
         <h5>CLI Agents:</h5>
         <ul>
-            <li><a href="" target="_blank">Claude Code</a></li>
-            <li><a href="" target="_blank">Gemini CLI</a></li>
-            <li><a href="" target="_blank">GitHub Copilot CLI</a></li>
-            <li><a href="" target="_blank">Cline CLI</a></li>
-            <li><a href="" target="_blank">DeepAgents CLI</a></li>
+            <li><a href="https://www.claude.com/product/claude-code" target="_blank">Claude Code</a></li>
+            <li><a href="https://geminicli.com/" target="_blank">Gemini CLI</a></li>
+            <li><a href="https://openai.com/codex/" target="_blank">OpenAI Codex</a></li>
+            <li><a href="https://github.com/features/copilot/cli" target="_blank">GitHub Copilot CLI</a></li>
+            <li><a href="https://docs.cline.bot/cline-cli/overview" target="_blank">Cline CLI</a></li>
             <li>...</li>
         </ul>
     </div>
     <div>
         <h5>Python frameworks:</h5>
         <ul>
-            <li><a href="" target="_blank">Claude Agent SDK</a></li>
-            <li><a href="" target="_blank">LangGraph</a></li>
-            <li><a href="" target="_blank">Google ADK</a></li>
-            <li><a href="" target="_blank">AWS Strands</a></li>
-            <li><a href="" target="_blank">Crew AI</a></li>
+            <li><a href="https://platform.claude.com/docs/en/agent-sdk/overview" target="_blank">Claude Agent SDK</a></li>
+            <li><a href="https://www.langchain.com/langgraph" target="_blank">LangGraph</a></li>
+            <li><a href="https://google.github.io/adk-docs/" target="_blank">Google ADK</a></li>
+            <li><a href="https://strandsagents.com/latest/" target="_blank">Strands Agents</a></li>
+            <li><a href="https://www.crewai.com/" target="_blank">Crew AI</a></li>
             <li>...</li>
         </ul>
     </div>
@@ -119,6 +142,22 @@
 ---
 
 ### Model Context
+
+<div class="two-column">
+    <div class="extra-small">
+        <h3>2024</h3>
+        <ul>
+            <li>Context window: 32K - 200K</li>
+        </ul>
+    </div>
+    <div class="extra-small">
+        <h3>2025</h3>
+        <ul>
+            <li>Context window: 128K - 1M</li>
+        </ul>
+    </div>
+</div>
+
 
 |||
 ### Context Rot and Poisoning
@@ -195,58 +234,11 @@
 * Culling
 * Compacting
 * Sub-Agents
-* Memory and RAG
+* Memory, RAG, MCP
 * Session planning (TODOs) and execution
 * Spec-driven development
 
 ---
-
-### Spec-driven development
-
-|||
-### BMAD
-
-
-|||
-### GitHub Spec-Kit
-
-
-|||
-### OpenSpec
-
-
----
-
-### Model Context Protocol
-
-
-|||
-### Python Exmaple
-
-
-```python
-import os
-
-print("Hello World!")
-```
-
-|||
-### JS Example
-
-
-
-|||
-### RAG-MCP
-
-
-
-|||
-### MCP as Files
-
-
-
----
-
 
 ### Claude Code
 
@@ -288,6 +280,50 @@ print("Hello World!")
 
 |||
 ### Sub-Agents
+
+
+---
+
+### Model Context Protocol
+
+
+|||
+### Python Exmaple
+
+
+```python
+import os
+
+print("Hello World!")
+```
+
+|||
+### JS Example
+
+
+
+|||
+### RAG-MCP
+
+
+
+|||
+### MCP as Files
+
+---
+
+### Spec-driven development
+
+|||
+### BMAD
+
+
+|||
+### GitHub Spec-Kit
+
+
+|||
+### OpenSpec
 
 
 ---
