@@ -125,14 +125,12 @@
     <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/" target="_blank">METR (19 March 2025) Measuring AI Ability to Complete Long Tasks</a>
 </div>
 
-<small>
-    
-</small>
 
 |||
 ### Agents 80%
 
 ![](images/agent-length.png)
+
 
 |||
 ### SWE 50%
@@ -141,21 +139,27 @@
 
 ---
 
-### Model Context
+### Agentic Code Performance
 
 <div class="two-column">
-    <div class="extra-small">
+    <small>
         <h3>2024</h3>
         <ul>
             <li>Context window: 32K - 200K</li>
+            <li>API rate limiting (subscription, tier)</li>
+            <li>Vibe coding, Prompt Engineering</li>
+            <li>Frequent hallucination, AI slop code</li>
         </ul>
-    </div>
-    <div class="extra-small">
+    </small>
+    <small>
         <h3>2025</h3>
         <ul>
             <li>Context window: 128K - 1M</li>
+            <li>Pay-as-you-go API proxy (<a href="https://openrouter.ai/" target="_blank">OpenRouter</a>)</li>
+            <li>Agentic planning, Context Engineering</li>
+            <li>Emerging best practices</li>
         </ul>
-    </div>
+    </small>
 </div>
 
 
@@ -246,6 +250,15 @@
 |||
 ### System Prompt
 
+<img src="images/cchistory.png"
+    data-preview-image
+    data-preview-fit="contain">
+
+<div class="extra-small">
+    <a href="https://cchistory.mariozechner.at/" target="_blank">Website</a> | 
+    <a href="https://www.npmjs.com/package/@mariozechner/cchistory" target="_blank">NPM</a> | 
+    <a href="https://github.com/badlogic/cchistory" target="_blank">GitHub</a> | 
+</div>
 
 |||
 ### Tools
