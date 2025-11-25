@@ -112,8 +112,10 @@ RUN echo 'export NVM_DIR="$HOME/.nvm"' >> /home/${USERNAME}/.bashrc \
 # Update PATH for current build context
 ENV PATH="${NVM_DIR}/versions/node/v${NODE_VERSION}.*/bin:${PATH}"
 
-# Install Claude Code CLI globally
-RUN . ${NVM_DIR}/nvm.sh && npm install -g @anthropic-ai/claude-code
+# Install Claude Code and Gemini CLI globally
+RUN . ${NVM_DIR}/nvm.sh && npm install -g \
+   @anthropic-ai/claude-code \
+   @google/gemini-cli
 
 # Set up local bin directory
 ENV PATH="/home/${USERNAME}/.local/bin:${PATH}"
