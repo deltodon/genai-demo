@@ -247,6 +247,32 @@
 ### Claude Code
 
 
+
+```bash
+npm i -g @anthropic-ai/claude-code
+```
+
+* .claude/settings.json
+* .claude/CLAUDE.md
+
+|||
+### Slash Commands
+
+<div class="extra-small">
+<ul>
+    <li><code>/</code>        - Type / and see what happens</li>
+    <li><code>/help</code>    - Show help and available commands</li>
+    <li><code>/init</code>    - Initialize a new CLAUDE.md file with codebase documentation</li>
+    <li><code>/model</code>   - Set the AI model for Claude Code</li>
+    <li><code>/context</code> - Visualize current context usage as a colored grid</li>
+    <li><code>/cost</code>    - Show the total cost and duration of the current session</li>
+    <li><code>/clear</code>   - Clear conversation history and free up context</li>
+    <li><code>/compact</code> - Clear conversation history but keep a summary in context.<br/>Optional: <code>/compact [instructions for summarization]</code></li>
+    <li><code>/hello</code>   - Say Hello (project)</li>
+</ul>
+</div> 
+
+
 |||
 ### System Prompt
 
@@ -261,84 +287,90 @@
 </div>
 
 |||
-### Tools
+### Subject for Future Talks
 
-
-|||
-### Hooks
-
-
-|||
-### Agents
-
+* Agents
+* Hooks
+* Model Context Protocol (MCP)
+    * Context 7
+    * RAG-MCP
+    * MCP as Files
+* Git trees
+* Codebase indexing
 
 ---
-
 
 ### Gemini CLI
 
-
-|||
-### Google Search
-
-
-|||
-### Using Gemini as Claude Code Sub-Agents
-
-
----
-
-### Claude Agent SDK
-
-
-|||
-### Sub-Agents
-
-
----
-
-### Model Context Protocol
-
-
-|||
-### Python Exmaple
-
-
-```python
-import os
-
-print("Hello World!")
+```bash
+npm install -g @google/gemini-cli
 ```
 
-|||
-### JS Example
-
-
-
-|||
-### RAG-MCP
-
+* .env - GOOGLE_API_KEY
+* GoogleSearch
 
 
 |||
-### MCP as Files
+### Slash Commands
+
+<div class="extra-small">
+<ul>
+    <li><code>/</code>          </li>
+    <li><code>/about</code>      </li>
+    <li><code>/help</code>      </li>
+    <li><code>/settings</code>  </li>
+    <li><code>/model</code>     </li>
+    <li><code>/clear</code>     </li>
+    <li><code>/compress</code>  </li>
+    <li><code>/stats</code>  </li>
+</ul>
+</div> 
+
+---
+
+### Cline
+
+* Demo
+* Claude Code integration
 
 ---
 
 ### Spec-driven development
 
-|||
-### BMAD
+##### BMAD
 
+<div class="extra-small">
+    <a href="https://bmadcodes.com/" target="_blank">Website</a> | 
+    <a href="https://www.npmjs.com/package/bmad-method" target="_blank">NPM</a> | 
+    <a href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank">GitHub</a>
+</div>
+<br/>
 
-|||
-### GitHub Spec-Kit
+##### GitHub Spec-Kit
 
+<div class="extra-small">
+    <a href="https://speckit.org/" target="_blank">Website</a> |  
+    <a href="https://github.com/github/spec-kit" target="_blank">GitHub</a>
+</div>
+<br/>
 
-|||
-### OpenSpec
+##### OpenSpec
 
+<div class="extra-small">
+    <a href="https://openspec.dev/" target="_blank">Website</a> | 
+    <a href="https://www.npmjs.com/package/@fission-ai/openspec" target="_blank">NPM</a> | 
+    <a href="https://github.com/Fission-AI/OpenSpec" target="_blank">GitHub</a>
+</div>
 
 ---
 
 ### Thank You
+
+<div class="extra-small">
+    Linkedin: <a href="https://www.linkedin.com/in/jiriklic/" target="_blank">@jiriklic</a>
+    <br/>
+    <br/>
+    GitHub: <a href="https://github.com/deltodon/genai-demo" target="_blank">deltodon/genai-demo</a>
+</div>
+
+
