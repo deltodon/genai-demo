@@ -30,6 +30,7 @@
         "bierner.github-markdown-preview",
         "tamasfe.even-better-toml",
         "anthropic.claude-code",
+        "google.gemini-cli-vscode-ide-companion",
         "saoudrizwan.claude-dev"
       ]
     }
