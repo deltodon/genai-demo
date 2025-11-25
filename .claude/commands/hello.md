@@ -1,15 +1,16 @@
 ---
 description: Say Hello
-argument-hint: name | message
+argument-hint: [name] | [message]
 ---
 
 ## Context
 
-- [name]: Person's name from $ARGUMENTS
-- [message]: Message from $ARGUMENTS
+- [name]: From $1 (default: "Tony Stark")
+- [message]: From $2 (default: "I am Iron Man!")
+
 
 ## Task
 
-Say hello to everyone at ML Club Meetup at Glasgow.
+Say "Hello to everyone at the ML Club Meetup in Glasgow."
 
-Introduce yourself as [name], and end your greetings with [message].
+Say "My name is [name], and [message]."
