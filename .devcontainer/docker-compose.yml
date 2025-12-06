@@ -22,28 +22,23 @@ services:
     # Keep container running
     command: sleep infinity
 
-  # Example: Add supporting services as needed
-  # Uncomment and customize for your GenAI projects
-  
-  # chromadb:
-  #   image: chromadb/chroma:latest
-  #   restart: unless-stopped
-  #   ports:
-  #     - "8000:8000"
-  #   volumes:
-  #     - chroma-data:/chroma/chroma
-  #   healthcheck:
-  #     test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
-  #     interval: 10s
-  #     timeout: 5s
-  #     retries: 5
-  #     start_period: 30s
+  mlflow:
+    build:
+      context: ..
+      dockerfile: deployement/mlflow/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-data:/app/mlruns
+      - mlflow-db:/app/db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
-  # redis:
-  #   image: redis:7-alpine
-  #   restart: unless-stopped
-  #   ports:
-  #     - "6379:6379"
-
-# volumes:
-#   chroma-data:
+volumes:
+  mlflow-data:
+  mlflow-db:
