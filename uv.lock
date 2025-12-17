@@ -950,6 +950,7 @@ source = { editable = "." }
 dependencies = [
     { name = "claude-agent-sdk" },
     { name = "mlflow" },
+    { name = "rich" },
     { name = "strands-agents" },
     { name = "strands-agents-tools" },
 ]
@@ -963,6 +964,7 @@ dev = [
 requires-dist = [
     { name = "claude-agent-sdk", specifier = ">=0.1.8" },
     { name = "mlflow", specifier = ">=3.7.0" },
+    { name = "rich", specifier = ">=14.2.0" },
     { name = "strands-agents", specifier = ">=1.19.0" },
     { name = "strands-agents-tools", specifier = ">=0.2.17" },
 ]

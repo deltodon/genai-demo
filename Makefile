@@ -33,6 +33,7 @@ help:
 	@echo "Available make targets:"
 	@echo " make help          - Print help"
 	@echo " make .venv         - Print out project configurations"
+	@echo " make jupyter       - Run JupyterLab"
 	@echo " make clean-python  - Remove Python build output"
 	@echo " make clean-docker  - Remove Docker containers, images, and volumes"
 	@echo " make clean-all     - Run both clean-python and clean-docker"
